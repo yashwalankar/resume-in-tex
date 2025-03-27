@@ -75,6 +75,14 @@
       
     \end{tabular*}\vspace{-7pt}
 }
+
+\newcommand{\resumeSubheadingCont}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubheadingEDU}[5]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -115,7 +123,7 @@
 %----------HEADING----------
 
 \textbf{\Huge \scshape Yash Walankar} \\ \vspace{1pt}
-\small 312-550-6274 $|$ \href{mailto:x@x.com}{{yash.walankar@rockets.utoledo.edu}}
+\small 312-550-6274 $|$ \href{mailto:x@x.com}{{walankar.yash@gmail.com}}
 \smash{\includegraphics[width=.15\textwidth,right]{images/frame.png}}
 
 
@@ -129,68 +137,88 @@
  %   \includegraphics[width=3cm, height=3cm]{test.png}
 %\end{right}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheadingEDU
-      {University of Toledo }{Toledo, Ohio}
-      {Bachelor of Science in Computer Science and Engineering, Minor in Mathematics.}{Aug. 2016 --  May 2021}{GPA: 3.15/4.00}
-    \resumeSubheadingEDU
-      {Ohio State University}{Columbus, Ohio}
-      {Visiting Student for College of Engineering }{May. 2020 -- Aug. 2020}{GPA: 4.00/4.00}
-  \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
+\vspace{-10pt}
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+    {Software Engineer}{Oct. 2023 -- Present}{MarginEdge}{Arlington, Virginia}
+        \resumeItemListStart
+        \resumeItem{Developed credit card processing microservice on AWS, integrated with GlobalPay via SOAP APIs to enable secure card vaulting, payment processing, voiding, and refunds}
+        \resumeItem{Engineered and optimized a robust payment system handling multiple payment transmission methods (check, VCC, ACH), successfully processing NACHA transactions with daily volumes exceeding \$1 million.}
+        \resumeItem{Leveraged Amazon SES to design and develop a communications microservice, optimizing email, and SMS notifications to enhance customer engagement and ensure timely transaction confirmations.}
+        \resumeItem{Spearheaded the frontend migration from Angular to React, while simultaneously developing new React components.}
+        \resumeItem{Engineered a comprehensive monitoring system with automated alerting, real-time notifications, and performance dashboards, reducing incident response time and improving system reliability}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Software Development Engineer I }{July 2021 -- Oct 2023}
+      { Amazon - Alexa Ad Enabled Content Systems }{Arlington, Virginia}
+      \resumeItemListStart
+        % \resumeItem{Designed, developed, and deployed microservices on AWS in an Agile environment, enhancing scalability, performance, and data accessibility.}
+        \resumeItem{Engineered and optimized ETL pipelines to ingest and process large ad revenue, analytics, and impressions datasets for Alexa News and Video, improving data accessibility and efficacy.}
+        \resumeItem{Partnered cross-functionally with BI and BD teams to automate reporting on engagement and revenue data for 121 external providers, streamlining analytics and decision making.}
+        \resumeItem{Designed and led the development of a GDPR and DSAR privacy compliance application, ensuring regulatory compliance for the team’s datasets.}
+        % \resumeItem{Built and deployed APIs to automate query execution on Redshift and workflow scheduling, reducing operational workload by 10+ hours per week.}
+        \resumeItem{Implemented and refined event driven SQL anomaly detection service using AWS Lambda, enhancing data integrity and proactive issue resolution.}
+      \resumeItemListEnd
+    \resumeSubheadingCont{Amazon Web Services - Console Configuration}{}
+    \resumeItemListStart
+        \resumeItem{Managed an internal tool responsible for AWS Console home configurations, supporting over 200 AWS services globally.}
+        \resumeItem{Coordinated cross-team efforts to configure the AWS Console for a successful launch of the new ap-southeast-3 region, ensuring a seamless deployment.}
+        \resumeItem{Earned recognition for exceptional on-call performance, consistently meeting or exceeding resolution targets and enhancing system reliability.}
+       \resumeItemListEnd
+    
+    
 
     \resumeSubheading
       {Software Engineering Co-op  }{Jan. 2020 -- Aug. 2020}
-      {Tenneco Inc. $|$ Spring 2020 , Summer 2020 }{Monroe, Michigan}
+      {Tenneco Inc. }{Monroe, Michigan}
       \resumeItemListStart
-        \resumeItem{Reduced object code building time by 30\% by automating the build process.}
-        \resumeItem{Automated HIL data test vector verification for intelligent suspension models using Python with Pandas library. }
-        \resumeItem{Integrated Builds and Tests with Jenkins pipeline and Git.}
+        \resumeItem{Optimized and automated the build process, reducing object code compilation time by 30\%, improving development efficiency.}
+        \resumeItem{Developed and implemented an automated HIL data test vector verification system for intelligent suspension models using Python and Pandas, enhancing validation accuracy and efficiency. }
+        \resumeItem{Integrated and streamlined build and test processes with Jenkins pipelines and Git, improving CI/CD efficiency and reliability.}
         
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Information Technology Support Specialist}{May. 2018 -- May. 2021}
-      {University of Toledo Medical Center $|$ Part-time}{Toledo, Ohio}
-      \resumeItemListStart
-        \resumeItem{Provided technical support for 500 plus computers on Health Sciences campus and satellite locations.}
-        \resumeItem{Diagnosed and resolved a range of software, hardware and network issues.}
-        \resumeItem{Increased efficiency by developing line tool PowerShell script to remotely manage multiple assets. }
-        \resumeItem{Automated asset inventory management tasks using Selenium web driver for python.  }
-        \resumeItem{Managed asset vulnerability using Rapid7 Nexpose tool. }
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {Peer Mentor}{Aug. 2019 -- Dec. 2020}
-      {University of Toledo, EECS Department }{Toledo , Ohio}
-      \resumeItemListStart
-        \resumeItem{Mentored EECS 1510 Object Oriented Programming.}
-        \resumeItem{Mentored EECS 1030 Introduction to Computer Science and Engineering.}
-        \resumeItem{Conducted and graded lab sessions, assisted students with programming assignments and projects.}
-        
-    \resumeItemListEnd
-
-    \resumeSubheading
+     \resumeSubheading
       {Engineering Co-op}{Aug. 2018 -- Dec. 2018}
-      {Regal Beloit Inc. $|$ Fall 2018 }{Bowling Green , Ohio}
+      {Regal Beloit Inc. }{Bowling Green, Ohio}
       \resumeItemListStart
-        \resumeItem{Developed Google Firebase supported Android application for Marathon Special Products Catalog. }
-        \resumeItem{Prototyped IoT device using Embedded C on STM32 board with multiple sensors to collect and analyze data of vitals inside Power blocks and Terminal blocks.}
-        \resumeItem{Implemented and maintained functions of relational database system for Engineering change requests in MS Access with VBA.}
+        \resumeItem{Designed and developed an Android application for the Marathon Special Products Catalog, leveraging Google Firebase for real-time data and inventory management.}
+        \resumeItem{Prototyped and programmed an IoT device using Embedded C on an STM32 board, integrating multiple sensors to collect and analyze vital data from Power and Terminal blocks.}
+        \resumeItem{Implemented and maintained a relational database system for Engineering Change Requests in MS Access using VBA, improving data organization and workflow efficiency.}
         
       \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {Peer Mentor}{Aug. 2019 -- Dec. 2020}
+    %   {University of Toledo, EECS Department }{Toledo , Ohio}
+    %   \resumeItemListStart
+    %     \resumeItem{Mentored EECS 1510 Object Oriented Programming.}
+    %     \resumeItem{Mentored EECS 1030 Introduction to Computer Science and Engineering.}
+    %     \resumeItem{Conducted and graded lab sessions, assisted students with programming assignments and projects.} 
+    %   \resumeItemListEnd
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{May. 2018 -- May. 2021}
+    %   {University of Toledo Medical Center}{Toledo, Ohio}
+    %   \resumeItemListStart
+    %    % \resumeItem{Provided technical support for 500 plus computers on Health Sciences campus and satellite locations.}
+    %     \resumeItem{Diagnosed and resolved a range of software, hardware and network issues.}
+    %     \resumeItem{Increased efficiency by developing line tool PowerShell script to remotely manage multiple assets. }
+    %     \resumeItem{Automated asset inventory management tasks using Selenium web driver for python.  }
+    %    % \resumeItem{Managed asset vulnerability using Rapid7 Nexpose tool. }
+    %  \resumeItemListEnd
+
+   
     
    
 
   \resumeSubHeadingListEnd
   
  %-----------PROGRAMMING SKILLS-----------
+\vspace{-10pt}
 \section{Technical Skills}
 
 \begin{center}
@@ -200,47 +228,66 @@
    >{\centering\arraybackslash}X 
    >{\raggedleft\arraybackslash}X  }
 
- Java & Python & C/C++ & SQL \\
+ JAVA & TypeScript & AWS & SQL \\
  
- PowerShell & MATLAB  & R  & HTML/CSS   \\
+ Python & Docker  & React  & Spring Boot   \\
  
- AWS & Jenkins & Git & C\# \\
+ C/C++ & Postgres & Git & APIs \\
 
 \end{tabularx}
 \end{center} 
-  
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Trade tool } $|$ \emph{Python, TDAmeritrade API, Jupyter Notebooks}}{}%Aug 2020 -- Dec 2020
-          \resumeItemListStart
-            \resumeItem{Collected data using the API and scanned for unusual options activity.  }
-            \resumeItem{Calculated possible position size based on current portfolio value and selected risk profile. }
-            \resumeItem{Generated report based on the data to create a hypothesis. }
-            
-          \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{Insulin Management App } $|$ \emph{TypeScript, ReactNative,NodeJS, MongoDB Atlas}}{}%Aug 2020 -- Dec 2020
-          \resumeItemListStart
-            \resumeItem{Collaborated with an Endocrinologist to build an app that calculates insulin dosage based on patients prescribed insulin sliding scale and carbohydrate intake.  }
-            \resumeItem{Utilized ReactNative with Expo to develop cross-platform mobile application. }
-            \resumeItem{Developed backend API endpoints with NodeJS to collect and create data for users.}
-            
-          \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{CNGF Link Prediction for NetworkX } $|$ \emph{Python, NetworkX }}{}%Aug 2020 -- Dec 2020
-          \resumeItemListStart
-            \resumeItem{Implemented CNGF Link prediction algorithm for a popular Python network analysis library NetworkX.  }
-            \resumeItem{Created unit and integration tests in accordance to the library documentation.}
-            
-            
-          \resumeItemListEnd
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingEDU
+      {University of Toledo }{Toledo, Ohio}
+      {Bachelor of Science in Computer Science and Engineering, Minor in Mathematics.}{Aug. 2016 --  May 2021}{}
       
-    \resumeSubHeadingListEnd
+%     \resumeSubheadingEDU
+%       {Ohio State University}{Columbus, Ohio}
+%       {Visiting Student for College of Engineering }{May. 2020 -- Aug. 2020}{GPA: 4.00/4.00}
+%   
+    \resumeSubHeadingListEnd  
+
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+    
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Trade tool } $|$ \emph{Python, TDAmeritrade API, Jupyter Notebooks}}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Collected data using the API and scanned for unusual options activity.  }
+%             \resumeItem{Calculated possible position size based on current portfolio value and selected risk profile. }
+%             \resumeItem{Generated report based on the data to create a hypothesis. }
+            
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{Insulin Management App } $|$ \emph{TypeScript, ReactNative,NodeJS, MongoDB Atlas}}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Collaborated with an Endocrinologist to build an app that calculates insulin dosage based on patients prescribed insulin sliding scale and carbohydrate intake.  }
+%             \resumeItem{Utilized ReactNative with Expo to develop cross-platform mobile application. }
+%             \resumeItem{Developed backend API endpoints with NodeJS to collect and create data for users.}
+            
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{CNGF Link Prediction for NetworkX } $|$ \emph{Python, NetworkX }}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Implemented CNGF Link prediction algorithm for a popular Python network analysis library NetworkX.  }
+%             \resumeItem{Created unit and integration tests in accordance to the library documentation.}
+            
+            
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{Door Security System } $|$ \emph{C , Arduino, ESP8266, Twilio API  }}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Designed a Module that attaches on to a door knob and notifies via SMS for unauthorized access.}
+%             \resumeItem{Engineered armed mode to tase and disable intruder.}
+            
+            
+%           \resumeItemListEnd
+      
+%     \resumeSubHeadingListEnd
     
 %\section{Collegiate Activities}
 %    \resumeSubHeadingListStart
