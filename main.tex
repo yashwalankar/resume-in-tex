@@ -26,8 +26,14 @@
 \usepackage{wrapfig}
 \input{glyphtounicode}
 
+
+
+%----------FONT OPTIONS----------
+
+
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -36,7 +42,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -116,57 +122,105 @@
 
 %----------HEADING----------
 
-\textbf{\Huge \scshape Yash Walankar} \\ \vspace{1pt}
-\small 312-550-6274 $|$ \href{mailto:x@x.com}{{walankar.yash@gmail.com}} 
-\smash{\includegraphics[width=.15\textwidth,right]{images/frame.png}}   
+\begin{center}
+\textbf{\Huge \scshape Yash Walankar} \\ \vspace{0.5pt}
+\end{center}
+\small 
+\begin{center}
+
+\href{tel:+13125506274}{312-550-6274} $|$
+\href{mailto:x@x.com}{{walankar.yash@gmail.com}} $|$ \href{https://yashwalankar.github.io}{yashwalankar.github.io}
+\end{center}
+% \smash{\includegraphics[width=.15\textwidth,right]{images/frame.png}}   
+
+
+%$|$ 
+%\href{https://linkedin.com/in/...}{\underline{linkedin.com/in/yashwalankar}} $|$
+%\href{https://github.com/...}{\underline{github.com/yashwalankar}}
+
+
+
+%\begin{right}
+ %   \includegraphics[width=3cm, height=3cm]{test.png}
+%\end{right}
+
+
+
 
 %-----------EXPERIENCE-----------
-\vspace{-10pt}
+\vspace{-20pt}
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
     {Software Engineer - Payments}{Oct. 2023 -- April 2025}{MarginEdge}{Arlington, Virginia}
         \resumeItemListStart
-        \resumeItem{Designed and built an AWS-based payment processing service for accounts payable, integrating with external card processors and vendor networks to support secure card vaulting and end-to-end payment workflows (payments, voids, refunds), contributing to overall 3 \% increase in payment volume.\%}
+        \resumeItem{Designed and built an AWS-based payment processing service for accounts payable, integrating with external card processors and vendor networks to support secure card vaulting and end-to-end payment workflows (payments, voids, refunds), contributing to a 3\% increase in product revenue.}
         \resumeItem{Engineered and optimized a high-throughput payment system supporting multiple transmission methods (check, VCC, ACH), including NACHA processing, reliably handling daily transaction volumes exceeding \$1M.}
-        \resumeItem{Leveraged Amazon SES to design and develop a communications microservice, optimizing email, and SMS notifications to enhance customer engagement and ensure timely transaction confirmations.}
+        \resumeItem{Developed vendor statement reconciliation workflows and integrated the payment system with external accounting platforms, ensuring accurate financial reporting and streamlined accounts payable operations.}
         \resumeItem{Spearheaded the frontend migration from Angular to React, while simultaneously developing new React components.}
-        \resumeItem{Engineered a comprehensive monitoring system with automated alerting, real-time notifications, and performance dashboards, reducing incident response time and improving system reliability}
+        \resumeItem{Engineered a comprehensive monitoring system with automated alerting, real-time notifications, and performance dashboards, reducing incident response time and improving system reliability.}
         \resumeItemListEnd
     \resumeSubheading
       {Software Development Engineer I }{July 2021 -- Oct 2023}
       { Amazon - Alexa Ad Enabled Content Systems }{Arlington, Virginia}
       \resumeItemListStart
-        \resumeItem{Engineered and optimized ETL pipelines to ingest and process large ad revenue, analytics, and impressions datasets for Alexa News and Video, reducing processing time by 20\% and improving ad targeting accuracy by 10\%.}
-        \resumeItem{Partnered cross-functionally with BI and BD teams to automate reporting on engagement and revenue data for 121 external providers, streamlining analytics and decision making.}
-        \resumeItem{Designed and led the development of a GDPR and DSAR privacy compliance application, ensuring regulatory compliance for the team's datasets.}
-        \resumeItem{Implemented and refined event driven SQL anomaly detection service using AWS Lambda, enhancing data integrity and proactive issue resolution.}
+        % \resumeItem{Designed, developed, and deployed microservices on AWS in an Agile environment, enhancing scalability, performance, and data accessibility.}
+        \resumeItem{Engineered and optimized ETL pipelines for large-scale ad revenue and impressions datasets by implementing incremental processing, query optimization, and partition tuning, reducing processing time by 20\% and improving ad targeting accuracy by 10\%.}
+        \resumeItem{Collaborated cross-functionally with BI and BD to develop a config-driven reporting platform that automated engagement and revenue analytics including SES-driven email delivery for 121 external providers, eliminating manual reporting and accelerating decision-making.}
+        \resumeItem{Designed and led development of a GDPR and DSAR privacy compliance application, ensuring regulatory compliance for the team’s datasets.}
+        % \resumeItem{Built and deployed APIs to automate query execution on Redshift and workflow scheduling, reducing operational workload by 10+ hours per week.}
+        \resumeItem{Implemented and refined event-driven SQL anomaly detection service using AWS Lambda, enhancing data integrity and proactive issue resolution.}
       \resumeItemListEnd
     \resumeSubheadingCont{Amazon Web Services - Console Configuration}{}
     \resumeItemListStart
         \resumeItem{Owned and maintained internal tooling powering AWS Console home configurations, supporting over 200 AWS services globally.}
         \resumeItem{Partnered with multiple service teams to configure AWS Console integrations for the ap-southeast-3 region launch.}
-        \resumeItem{Earned recognition for exceptional on-call performance, consistently meeting or exceeding resolution targets and enhancing system reliability.}
+        \resumeItem{Earned recognition for exceptional on-call performance, consistently meeting or exceeding resolution targets and strengthening operational resilience.}
        \resumeItemListEnd
     
+    
+
     \resumeSubheading
       {Software Engineering Co-op  }{Jan. 2020 -- Aug. 2020}
       {Tenneco Inc. }{Monroe, Michigan}
       \resumeItemListStart
         \resumeItem{Optimized and automated the build process, reducing object code compilation time by 30\%, improving development efficiency.}
         \resumeItem{Developed and implemented an automated HIL data test vector verification system for intelligent suspension models using Python and Pandas, enhancing validation accuracy and efficiency. }
-        \resumeItem{Integrated and streamlined build and test processes with Jenkins pipelines and Git, improving CI/CD efficiency and reliability.}
+        \resumeItem{Built Jenkins CI/CD pipelines from scratch, automating build and test workflows and increasing development velocity.}
         
       \resumeItemListEnd
-
      \resumeSubheading
       {Engineering Co-op}{Aug. 2018 -- Dec. 2018}
       {Regal Beloit Inc. }{Bowling Green, Ohio}
       \resumeItemListStart
-        \resumeItem{Designed and developed an Android application for the Marathon Special Products Catalog, leveraging Google Firebase for real-time data and inventory management.}
+        \resumeItem{Designed and developed an Android application for the Marathon Special Products Catalog, leveraging Firebase for real-time data and inventory management.}
         \resumeItem{Prototyped and programmed an IoT device using Embedded C on an STM32 board, integrating multiple sensors to collect and analyze vital data from Power and Terminal blocks.}
+        % \resumeItem{Implemented and maintained a relational database system for Engineering Change Requests in MS Access using VBA, improving data organization and workflow efficiency.}
         
       \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {Peer Mentor}{Aug. 2019 -- Dec. 2020}
+    %   {University of Toledo, EECS Department }{Toledo , Ohio}
+    %   \resumeItemListStart
+    %     \resumeItem{Mentored EECS 1510 Object Oriented Programming.}
+    %     \resumeItem{Mentored EECS 1030 Introduction to Computer Science and Engineering.}
+    %     \resumeItem{Conducted and graded lab sessions, assisted students with programming assignments and projects.} 
+    %   \resumeItemListEnd
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{May. 2018 -- May. 2021}
+    %   {University of Toledo Medical Center}{Toledo, Ohio}
+    %   \resumeItemListStart
+    %    % \resumeItem{Provided technical support for 500 plus computers on Health Sciences campus and satellite locations.}
+    %     \resumeItem{Diagnosed and resolved a range of software, hardware and network issues.}
+    %     \resumeItem{Increased efficiency by developing line tool PowerShell script to remotely manage multiple assets. }
+    %     \resumeItem{Automated asset inventory management tasks using Selenium web driver for python.  }
+    %    % \resumeItem{Managed asset vulnerability using Rapid7 Nexpose tool. }
+    %  \resumeItemListEnd
+
+   
+    
+   
 
   \resumeSubHeadingListEnd
   
@@ -197,7 +251,78 @@
       {University of Toledo }{Toledo, Ohio}
       {Bachelor of Science in Computer Science and Engineering, Minor in Mathematics.}{Aug. 2016 --  May 2021}{}
       
+%     \resumeSubheadingEDU
+%       {Ohio State University}{Columbus, Ohio}
+%       {Visiting Student for College of Engineering }{May. 2020 -- Aug. 2020}{GPA: 4.00/4.00}
+%   
     \resumeSubHeadingListEnd  
+
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+    
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Trade tool } $|$ \emph{Python, TDAmeritrade API, Jupyter Notebooks}}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Collected data using the API and scanned for unusual options activity.  }
+%             \resumeItem{Calculated possible position size based on current portfolio value and selected risk profile. }
+%             \resumeItem{Generated report based on the data to create a hypothesis. }
+            
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{Insulin Management App } $|$ \emph{TypeScript, ReactNative,NodeJS, MongoDB Atlas}}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Collaborated with an Endocrinologist to build an app that calculates insulin dosage based on patients prescribed insulin sliding scale and carbohydrate intake.  }
+%             \resumeItem{Utilized ReactNative with Expo to develop cross-platform mobile application. }
+%             \resumeItem{Developed backend API endpoints with NodeJS to collect and create data for users.}
+            
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{CNGF Link Prediction for NetworkX } $|$ \emph{Python, NetworkX }}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Implemented CNGF Link prediction algorithm for a popular Python network analysis library NetworkX.  }
+%             \resumeItem{Created unit and integration tests in accordance to the library documentation.}
+            
+            
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{Door Security System } $|$ \emph{C , Arduino, ESP8266, Twilio API  }}{}%Aug 2020 -- Dec 2020
+%           \resumeItemListStart
+%             \resumeItem{Designed a Module that attaches on to a door knob and notifies via SMS for unauthorized access.}
+%             \resumeItem{Engineered armed mode to tase and disable intruder.}
+            
+            
+%           \resumeItemListEnd
+      
+%     \resumeSubHeadingListEnd
+    
+%\section{Collegiate Activities}
+%    \resumeSubHeadingListStart
+%        \resumeProjectHeading
+%            {\textbf{ACM -}  \emph{Secretary, Doubled Member enrollment and retention, Organized Talks }}{}%Aug 2020 -- Dec 2020
+%    \resumeSubHeadingListEnd
+%    \resumeSubHeadingListStart
+%        \resumeProjectHeading
+%            {\textbf{UT Coding Team -}  \emph{Member, Participated in multiple competitive coding contests}}{}%Aug 2020 -- Dec 2020
+%    \resumeSubHeadingListEnd
+{}{}{}
+%
+
+
+
+
+
+
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%    \small{\item{
+%     \textbf{Languages}{: Java, Python ,C/C++/C\# ,TypeScript, MATLAB} \\
+%     %\textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%     \textbf{Developer Tools}{: Git, SVN, Jenkins, AWS } \\
+    
+%    }}
+% \end{itemize}
+
 
 %-------------------------------------------
 \end{document}
